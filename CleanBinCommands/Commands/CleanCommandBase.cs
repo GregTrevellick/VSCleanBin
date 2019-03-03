@@ -33,7 +33,7 @@ namespace CleanBinCommands.Commands
             try
             {
                 Directory.Delete(folder, true);
-                errorHandlerService.WriteMessage($"Folder {folder} deleted");
+                errorHandlerService.WriteMessage($"Folder {folder} deleted{Environment.NewLine}");
             }
             catch (Exception ex)
             {
